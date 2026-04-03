@@ -1,0 +1,59 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Product Review Analyzer</h1>
+    <p>Paste your reviews and get AI insights</p>
+  </div>
+
+  <!-- INPUT SECTION -->
+  <div class="container">
+    <textarea id="reviewInput" placeholder="Paste your review here..."></textarea>
+    <button id="analyzeBtn" onclick="analyzeReview()">Analyze Review</button>
+  </div>
+
+  <!-- LOADING -->
+  <div id="loading" class="hidden">Analyzing...</div>
+
+  <!-- RESULTS -->
+  <div id="results" class="hidden">
+
+    <div class="card">
+      <h3>Sentiment</h3>
+      <p id="sentiment"></p>
+    </div>
+
+    <div class="card">
+      <h3>Predicted Rating</h3>
+      <p id="rating"></p>
+    </div>
+
+    <div class="card">
+      <h3>Pros</h3>
+      <ul id="pros"></ul>
+    </div>
+
+    <div class="card">
+      <h3>Cons</h3>
+      <ul id="cons"></ul>
+    </div>
+
+    <div class="card">
+      <h3>Recommendations</h3>
+      <ul id="recommendations"></ul>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
